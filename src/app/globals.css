@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    :root {
+        --orchid-50: #66023c;
+        --orchid-100: #5c0236;
+        --orchid-200: #520230;
+        --orchid-300: #47012a;
+        --orchid-400: #3d0124;
+        --orchid-500: #33011e;
+        --orchid-600: #290118;
+        --orchid-700: #1f0112;
+        --orchid-800: #14000c;
+        --orchid-900: #0a0006;
+    }
+
+    p {
+        @apply select-none;
+    }
+
+    .text-shadow {
+        -webkit-text-stroke: .5px var(--orchid-100);
+    }
+}
