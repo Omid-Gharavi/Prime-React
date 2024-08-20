@@ -22,7 +22,7 @@ const SideBar = () => {
 
     return (
         <div className={`relative min-h-screen transition-all duration-500 ease-in-out ${toggle ? 'w-[61.5px]' : 'w-32'} bg-orchid-800`}>
-            <div className='absolute left-[100%] w-px h-screen bg-orchid-500'>
+            <div className='absolute z-40 left-[100%] w-px h-screen bg-orchid-500'>
                 <div
                     className='flex flex-col justify-center items-center cursor-pointer absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] w-10 h-10 rounded-full bg-orchid-50 transition-all duration-[.2s] ease-in-out'
                     onClick={() => setToggle(!toggle)}

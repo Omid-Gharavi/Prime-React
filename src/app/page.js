@@ -3,7 +3,7 @@ import SideBar from "@/components/sidebar/SideBar";
 
 export default function Home() {
   return (
-    <main className="dark grid grid-cols-[8rem_1fr] bg-background text-foreground min-h-screen">
+    <main className="dark bg-background text-foreground grid grid-cols-[8rem_1fr] min-h-screen">
       <SideBar />
       <Chart />
     </main>
