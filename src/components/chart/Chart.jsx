@@ -21,7 +21,7 @@ Chartjs.register({
     Title,
     Tooltip,
     Filler,
-    // Legend
+    Legend
 });
 
 const Chart = () => {
@@ -29,7 +29,7 @@ const Chart = () => {
         scales: {
             y: {
                 grid: {
-                    color: '#66023c',
+                    color: '#a7a7a7',
                 },
                 min: 1000000,
                 max: 800000000000,
@@ -47,7 +47,7 @@ const Chart = () => {
             },
             x: {
                 grid: {
-                    color: '#66023c'
+                    color: '#a7a7a7'
                 }
             }
         },
@@ -60,9 +60,9 @@ const Chart = () => {
             axis: 'x',
         },
         plugins: {
-            // legend: {
-            //     position: 'bottom'
-            // },
+            legend: {
+                position: 'bottom'
+            },
             tooltip: {
                 enabled: true,
                 filler: {
@@ -112,7 +112,7 @@ const Chart = () => {
     }
 
     return (
-        <div className='m-4 px-4 border-[1px] border-solid border-orchid-100 rounded-lg bg-orchid-900'>
+        <div className='px-4 rounded-lg bg-zinc-900'>
             <Line data={data} options={options} />
         </div>
     )
