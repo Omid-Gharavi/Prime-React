@@ -61,7 +61,7 @@ const Chart = () => {
         },
         plugins: {
             legend: {
-                position: 'bottom'
+                position: 'top'
             },
             tooltip: {
                 enabled: true,
@@ -112,8 +112,8 @@ const Chart = () => {
     }
 
     return (
-        <div className='px-4 rounded-lg bg-zinc-900'>
-            <Line data={data} options={options} />
+        <div className='px-4 grid grid-rows-1 grid-cols-1 rounded-lg bg-zinc-900'>
+            <Line className='!w-full !h-full' data={data} options={options} />
         </div>
     )
 }

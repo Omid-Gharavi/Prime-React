@@ -23,7 +23,7 @@ const SideBar = () => {
     ]
 
     return (
-        <div className={`relative transition-all duration-500 ease-in-out ${toggle ? 'w-[61.5px]' : 'w-32'} bg-zinc-900 rounded-lg`}>
+        <div className={`relative transition-all duration-500 ease-in-out ${toggle ? 'w-[77px]' : 'w-40'} bg-zinc-900 rounded-lg`}>
             <div className='absolute z-40 left-[100%] w-px h-screen'>
                 <div
                     className='flex flex-col justify-center items-center cursor-pointer absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] w-10 h-10 rounded-full bg-purple-600 transition-all duration-[.2s] ease-in-out'
