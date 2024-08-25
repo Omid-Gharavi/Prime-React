@@ -1,0 +1,1 @@
+const countries = ['iran', 'america', 'german', 'italy']

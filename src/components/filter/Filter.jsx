@@ -35,9 +35,8 @@ const Filter = () => {
                     ref={dropdownRef}
                     onClick={(e) => {
                         e.stopPropagation();
-                        inputRef.current.focus();
                     }}
-                    className={`absolute inset-x-0 transition-all duration-250 ease-in-out bg-default-100 rounded-lg h-6 ${toggle ? 'top-[120%] opacity-100' : 'top-[170%] opacity-0'
+                    className={`absolute inset-x-0 transition-all duration-250 ease-in-out bg-default-100 rounded-lg h-52 ${toggle ? 'top-[120%] visible opacity-100' : 'top-[170%] invisible opacity-0'
                         }`}
                 ></div>
             </div>
